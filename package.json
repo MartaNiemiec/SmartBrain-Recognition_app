@@ -2,7 +2,7 @@
   "name": "smart_brain-recognition_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://martaniemiec.github.io/SmartBrain-Recognition_app/",
+  "homepage": "https://martaniemiec.github.io/smart_brain-recognition_app/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.3",
