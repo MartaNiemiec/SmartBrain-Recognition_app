@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/SmartBrain-Recognition_app/precache-manifest.f5c8df87be49371b11bc06987bf5f96d.js"
+  "/smart_brain-recognition_app/precache-manifest.3c05c0e93108cf4def695b8dcbbf380a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/SmartBrain-Recognition_app/index.html", {
+workbox.routing.registerNavigationRoute("/smart_brain-recognition_app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
