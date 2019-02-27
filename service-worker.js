@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/smart_brain-recognition_app/precache-manifest.3c05c0e93108cf4def695b8dcbbf380a.js"
+  "/smart_brain-recognition_app/precache-manifest.1d26f4177bada85432b89d496a081742.js"
 );
 
 workbox.clientsClaim();
