@@ -1,15 +1,15 @@
 {
-  "main.css": "/smart_brain-recognition_app/static/css/main.f5c1d375.chunk.css",
-  "main.js": "/smart_brain-recognition_app/static/js/main.c96067da.chunk.js",
-  "main.js.map": "/smart_brain-recognition_app/static/js/main.c96067da.chunk.js.map",
+  "main.css": "/smart_brain-recognition_app/static/css/main.d3b858f9.chunk.css",
+  "main.js": "/smart_brain-recognition_app/static/js/main.f5a2d92b.chunk.js",
+  "main.js.map": "/smart_brain-recognition_app/static/js/main.f5a2d92b.chunk.js.map",
   "runtime~main.js": "/smart_brain-recognition_app/static/js/runtime~main.430edbd4.js",
   "runtime~main.js.map": "/smart_brain-recognition_app/static/js/runtime~main.430edbd4.js.map",
   "static/css/2.144eb7c1.chunk.css": "/smart_brain-recognition_app/static/css/2.144eb7c1.chunk.css",
-  "static/js/2.666b124d.chunk.js": "/smart_brain-recognition_app/static/js/2.666b124d.chunk.js",
-  "static/js/2.666b124d.chunk.js.map": "/smart_brain-recognition_app/static/js/2.666b124d.chunk.js.map",
+  "static/js/2.166a6399.chunk.js": "/smart_brain-recognition_app/static/js/2.166a6399.chunk.js",
+  "static/js/2.166a6399.chunk.js.map": "/smart_brain-recognition_app/static/js/2.166a6399.chunk.js.map",
   "index.html": "/smart_brain-recognition_app/index.html",
-  "precache-manifest.1d26f4177bada85432b89d496a081742.js": "/smart_brain-recognition_app/precache-manifest.1d26f4177bada85432b89d496a081742.js",
+  "precache-manifest.eafe9f914f3e0395c8ce1dd928080367.js": "/smart_brain-recognition_app/precache-manifest.eafe9f914f3e0395c8ce1dd928080367.js",
   "service-worker.js": "/smart_brain-recognition_app/service-worker.js",
   "static/css/2.144eb7c1.chunk.css.map": "/smart_brain-recognition_app/static/css/2.144eb7c1.chunk.css.map",
-  "static/css/main.f5c1d375.chunk.css.map": "/smart_brain-recognition_app/static/css/main.f5c1d375.chunk.css.map"
+  "static/css/main.d3b858f9.chunk.css.map": "/smart_brain-recognition_app/static/css/main.d3b858f9.chunk.css.map"
 }
