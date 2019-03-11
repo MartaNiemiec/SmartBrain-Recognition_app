@@ -93,7 +93,24 @@ class App extends Component {
       this.state.input) // setState() in React is asynchronous, so here we CAN'T put this.state.imageUrl;
       // One way to go around this issue is to use a callback function: 
       // setState(updater, callback)
-      .then(response => this.displayFaceBox(this.calculateFaceLocation(response)))
+      .then(response => {
+        if (response) {
+          fetch('http://localhost:3000/image', {
+            method: 'put',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+              id: this.state.user.id
+            })
+          })
+          .then(response => response.json())
+          .then(count => {
+            this.setState(Object.assign(this.state.user, { entries: count })  // using Object.assign we're just updating an object instead of changing the user object
+              // {user: { entries: count }}
+            )
+          })
+        }
+      this.displayFaceBox(this.calculateFaceLocation(response))
+      })
       .catch(err => console.log(err));
   }
 
