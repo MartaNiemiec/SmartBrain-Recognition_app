@@ -118,7 +118,7 @@ class App extends Component {
         { this.state.route === 'home' 
           ? <div>
               <Logo />
-              <Rank />
+              <Rank name={this.state.user.name} entries={this.state.user.entries}/>
               {/* this. is needed because it is part of the class, onInputChange is a property of the app */}
               <ImageLinkForm 
                 onInputChange={this.onInputChange} 
@@ -128,7 +128,7 @@ class App extends Component {
             </div>
           : (
               route === 'signin' 
-              ? <Signin onRouteChange={this.onRouteChange}/>
+              ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
               : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
             )
         }
