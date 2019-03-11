@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const bcrypt = require('bcrypt-nodejs');
 
 const app = express();
 
@@ -32,6 +33,15 @@ app.get('/', (req, res) => {
 
 
 app.post('/signin', (req, res) => {
+  // Load hash from your password DB.
+  bcrypt.compare("apples", '$2a$10$Zm46r4vz7R2HYW7/4pVDeeNAi8FScQOvHoF1Bqrd1tW/zpwEghKVm', function(err, res) {
+    // res == true
+    console.log('first quess', res);
+  });
+  bcrypt.compare("veggies", '$2a$10$Zm46r4vz7R2HYW7/4pVDeeNAi8FScQOvHoF1Bqrd1tW/zpwEghKVm', function(err, res) {
+    // res == false
+    console.log('second quess', res);
+  });
   if (req.body.email === database.users[0].email && 
       req.body.password === database.users[0].password) {
     res.json('success')
@@ -45,6 +55,10 @@ app.post('/signin', (req, res) => {
 
 app.post('/register', (req, res) => {
   const { email, name, password } = req.body;
+  // bcrypt.hash(password, null, null, function(err, hash) {
+  //  // Store hash in your password DB.
+  //   console.log(hash);
+  // });
   database.users.push({
       id: '125',
       name: name,
@@ -86,6 +100,11 @@ app.put('/image', (req, res) => {
     res.status(400),json('not found');
   }
 })
+
+
+
+
+
 
 
 app.listen(3000, () => {
