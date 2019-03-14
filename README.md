@@ -7,8 +7,13 @@ Building using:
 * NPM,
 * React,
 * Tachyons,
-* Clarifai API[:link:](https://www.clarifai.com/) 
-* React Particles.js [:link:](https://www.npmjs.com/package/react-particles-js).
+* Clarifai API[:link:](https://www.clarifai.com/), 
+* React Particles.js [:link:](https://www.npmjs.com/package/react-particles-js),
+* Node.js,
+* Express.js,
+* SQL,
+* PostgreSQL
+
 
 ### LIVE APP [:arrow_forward:](https://martaniemiec.github.io/smart_brain-recognition_app/)
 
