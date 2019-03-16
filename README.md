@@ -1,7 +1,7 @@
 *In progress...*
 React app with face recognition from the UDEMY course *The Complete Web Developer in 2019: Zero to Mastery* by Andrei Neagoie.
 
-Building using:
+Built using:
 * HTML,
 * CSS,
 * NPM,
