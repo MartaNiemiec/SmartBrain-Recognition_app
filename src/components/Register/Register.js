@@ -24,7 +24,6 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    // console.log(this.state);
     fetch('http://localhost:3000/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
@@ -36,7 +35,7 @@ class Register extends React.Component {
     })
     .then(response => response.json())
     .then(user => {
-      if (user) {
+      if (user.id) {  // when registering "user" is true so to check if there is a user we have to check if the user has an "id"
         this.props.loadUser(user);
         this.props.onRouteChange('home');  
       }
