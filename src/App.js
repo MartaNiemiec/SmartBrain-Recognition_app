@@ -85,8 +85,11 @@ class App extends Component {
   }
 
   onButtonSubmit = () => {
+    // setState() in React is asynchronous, so here we CAN'T put this.state.imageUrl;
+    // One way to go around this issue is to use a callback function: 
+    // setState(updater, callback)
     this.setState({imageUrl: this.state.input}) 
-      fetch('http://localhost:3000/imageurl', { // because of the fetch method we need to add additional response.json 
+      fetch('https://salty-island-85852.herokuapp.com/imageurl', { // because of the fetch method we need to add additional response.json 
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -96,7 +99,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://salty-island-85852.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
