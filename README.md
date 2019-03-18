@@ -12,10 +12,11 @@ Built using:
 * Node.js,
 * Express.js,
 * SQL,
-* PostgreSQL
+* PostgreSQL,
+* Heroku.
 
 
-### LIVE APP [:arrow_forward:](https://martaniemiec.github.io/smart_brain-recognition_app/)
+### LIVE APP [:arrow_forward:](https://smart-brain-recognition-app.herokuapp.com/)
 
 ![Smart Brain - Sign Up](SmartBrain-SignUp.png)
 ![Smart Brain - recognition](SmartBrain-recognition.png)
